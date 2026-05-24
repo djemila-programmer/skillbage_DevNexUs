@@ -27,7 +27,7 @@ export default function SettingsPage() {
 
       <section className="mb-6">
         <label className="block mb-2 font-medium">Langue</label>
-        <select aria-label="Langue" value={language} onChange={(e) => setLanguage(e.target.value as 'fr' | 'en')} className="border rounded px-3 py-2">
+        <select aria-label="Langue" value={language} onChange={(e) => setLanguage(e.target.value)} className="border rounded px-3 py-2">
           <option value="fr">Français</option>
           <option value="en">English</option>
         </select>
@@ -35,7 +35,7 @@ export default function SettingsPage() {
 
       <section className="mb-6">
         <label className="block mb-2 font-medium">Thème</label>
-        <select aria-label="Thème" value={theme} onChange={(e) => setTheme(e.target.value as 'light' | 'dark')} className="border rounded px-3 py-2">
+        <select aria-label="Thème" value={theme} onChange={(e) => setTheme(e.target.value)} className="border rounded px-3 py-2">
           <option value="light">Clair</option>
           <option value="dark">Sombre</option>
         </select>

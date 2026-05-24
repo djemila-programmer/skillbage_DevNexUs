@@ -1,0 +1,190 @@
+import React from 'react'
+import Link from 'next/link'
+
+export default function Home() {
+  return (
+    <div className="w-full relative overflow-hidden">
+      {/* Header Navigation */}
+      <div className="w-full h-20 px-6 py-2.5 fixed z-50 bg-white/80 backdrop-blur-md flex justify-between items-center border-b border-stone-200">
+        <div className="flex items-center gap-8">
+          <div className="flex gap-0.5">
+            <span className="text-stone-900 text-2xl font-bold font-['Plus_Jakarta_Sans']">Skill</span>
+            <span className="text-orange-800 text-2xl font-bold font-['Plus_Jakarta_Sans']">Badge</span>
+          </div>
+          <div className="hidden lg:flex justify-start items-start gap-6">
+            <Link href="/" className="text-orange-800 text-base font-normal font-['Inter']">Public Portal</Link>
+            <a href="#about" className="text-stone-600 text-base font-normal font-['Inter']">About</a>
+            <a href="#verify" className="text-stone-600 text-base font-normal font-['Inter']">Verification</a>
+          </div>
+        </div>
+        <div className="flex items-center gap-3">
+          <select className="px-3 py-2 text-stone-950 text-sm font-bold font-['Plus_Jakarta_Sans'] leading-5 border border-stone-200 rounded">
+            <option>Français (FR)</option>
+          </select>
+          <Link href="/auth/login-talent" className="px-6 py-2.5 bg-orange-900 rounded-md text-white text-base font-semibold font-['Inter'] hover:bg-orange-950">
+            Sign In
+          </Link>
+          <Link href="/auth/register-talent" className="px-6 py-2.5 bg-orange-900 rounded-md text-white text-base font-semibold font-['Inter'] hover:bg-orange-950">
+            Sign Up
+          </Link>
+        </div>
+      </div>
+
+      {/* Hero Section */}
+      <div className="w-full min-h-screen px-6 lg:px-20 py-32 mt-20 bg-stone-50 flex justify-center items-center">
+        <div className="max-w-[1280px] w-full relative">
+          <div className="max-w-96 flex flex-col justify-start items-start gap-6">
+            {/* Badge */}
+            <div className="px-3 py-1 bg-emerald-500/10 rounded-full inline-flex justify-start items-center gap-2">
+              <div className="w-3 h-3 bg-emerald-500" />
+              <div className="text-emerald-500 text-xs font-bold font-['Inter']">Certification d&apos;État Blockchain</div>
+            </div>
+
+            {/* Headline */}
+            <h1 className="text-5xl font-extrabold font-['Plus_Jakarta_Sans'] leading-tight text-stone-900">
+              Propulsez votre<br/>carrière avec une<br/>
+              <span className="text-orange-800">preuve</span>
+              <span> de talent.</span>
+            </h1>
+
+            {/* Subheading */}
+            <p className="text-2xl font-normal font-['Inter'] text-stone-600 leading-7">
+              La plateforme nationale pour certifier<br/>vos compétences tech sur la blockchain et booster votre employabilité.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="w-full flex flex-col gap-4 pt-4">
+              <Link href="/auth/register-talent" className="w-full h-14 bg-orange-800 rounded-xl text-white text-base font-bold font-['Inter'] hover:bg-orange-900 transition flex items-center justify-center">
+                Créer mon portfolio
+              </Link>
+              <Link href="/auth/register-formateur" className="w-full h-14 bg-rose-100 rounded-xl border border-stone-300 text-orange-800 text-base font-bold font-['Inter'] hover:bg-rose-200 transition flex items-center justify-center">
+                Rejoindre en tant que formateur
+              </Link>
+              <Link href="#verify" className="w-full h-14 bg-stone-300 rounded-xl border border-stone-300 text-orange-800 text-base font-bold font-['Inter'] hover:bg-stone-400 transition flex items-center justify-center">
+                Vérifier un talent
+              </Link>
+            </div>
+          </div>
+
+          {/* Decorative elements */}
+          <div className="absolute w-96 h-96 left-[103px] top-[26px] bg-red-300/30 rounded-full blur-[32px]" />
+          <div className="absolute w-48 h-48 left-[-32.05px] top-[-32.05px] opacity-50 bg-orange-900/10 rounded-full blur-[32px]" />
+
+          {/* Branding */}
+          <div className="absolute pt-12 flex flex-col gap-3.5 bottom-0 right-0">
+            <h2 className="text-4xl font-normal font-['Manrope'] text-zinc-900">SkillBadge</h2>
+            <p className="text-base font-normal font-['Inter'] uppercase text-stone-700 tracking-[6px]">
+              BADGES NUMÉRIQUES<br/>CERTIFIÉS SUR LA BLOCKCHAIN
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Challenge Section */}
+      <div id="about" className="w-full flex flex-col justify-start items-center gap-20 px-6 lg:px-8 py-32 bg-white">
+        <div className="max-w-[768px] flex flex-col gap-6">
+          <h2 className="text-4xl font-bold font-['Plus_Jakarta_Sans'] text-zinc-900 text-center">
+            Le <span className="font-['Inter']">Défi</span> du Capital Humain
+          </h2>
+          <p className="text-lg font-normal font-['Inter'] text-stone-700 text-center">
+            Le paradoxe numérique du Burkina Faso : une formation massive mais une employabilité<br className="hidden sm:block"/>limitée par le manque de confiance.
+          </p>
+        </div>
+
+        {/* Stats Cards */}
+        <div className="w-full max-w-[1280px] space-y-4">
+          <div className="p-10 bg-white rounded-3xl shadow-lg flex flex-col items-center gap-4 border border-stone-100">
+            <div className="text-6xl font-bold font-['Inter'] text-blue-950">15 000+</div>
+            <div className="text-sm font-bold font-['Inter'] uppercase text-stone-500 tracking-wider">JEUNES FORMÉS / AN</div>
+            <p className="text-base font-normal font-['Inter'] text-stone-700 text-center">
+              Une réserve de talent dynamique mais<br/>dépourvue de certifications<br className="hidden sm:block"/>standardisées.
+            </p>
+          </div>
+
+          <div className="p-10 bg-white rounded-3xl shadow-lg flex flex-col items-center gap-4 border border-stone-100">
+            <div className="text-6xl font-bold font-['Inter'] text-blue-950">70%</div>
+            <div className="text-sm font-bold font-['Inter'] uppercase text-stone-500 tracking-wider">RECRUTEURS EN DIFFICULTÉ</div>
+            <p className="text-base font-normal font-['Inter'] text-stone-700 text-center">
+              Les entreprises peinent à valider<br/>l&apos;authenticité des compétences<br className="hidden sm:block"/>déclarées.
+            </p>
+          </div>
+
+          <div className="p-10 bg-white rounded-3xl shadow-lg flex flex-col items-center gap-4 border border-stone-100">
+            <div className="text-6xl font-bold font-['Inter'] text-blue-950">Moins de 5%</div>
+            <div className="text-sm font-bold font-['Inter'] uppercase text-stone-500 tracking-wider">CERTIFIÉS RECONNUS</div>
+            <p className="text-base font-normal font-['Inter'] text-stone-700 text-center">
+              La grande majorité des acquis restent<br/>informels et invisibles pour le marché.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Solution Section */}
+      <div className="w-full py-16 bg-stone-50 flex justify-center">
+        <h2 className="text-3xl font-bold font-['Inter'] text-orange-900 text-center">
+          SkillBadge comble le fossé entre la formation<br/>théorique et les exigences du marché de l&apos;emploi<br className="hidden sm:block"/>numérique.
+        </h2>
+      </div>
+
+      {/* Ecosystem Section */}
+      <div className="w-full px-6 lg:px-8 py-32 bg-white flex flex-col items-center">
+        <div className="max-w-[1280px] w-full space-y-20">
+          <h2 className="text-4xl font-bold font-['Plus_Jakarta_Sans'] text-zinc-900 text-center">
+            L&apos;Écosystème de Confiance SkillBadge
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { title: &quot;Formateur&quot;, desc: &quot;Institutions accréditées évaluant les compétences.&quot;, border: &quot;border-stone-200&quot; },
+              { title: &quot;Badge émis&quot;, desc: &quot;Enregistrement immuable sur la blockchain nationale.&quot;, border: &quot;border-cyan-700&quot; },
+              { title: &quot;Talent&quot;, desc: &quot;Le porteur possède et partage son portfolio numérique.&quot;, border: &quot;border-stone-900&quot; },
+              { title: &quot;Vérification&quot;, desc: &quot;Accès instantané à la preuve de compétence.&quot;, border: &quot;border-orange-900&quot; }
+            ].map((item, idx) => (
+              <div key={idx} className={`p-8 bg-white rounded-3xl shadow-lg border-t-4 ${item.border} flex flex-col items-center gap-2`}>
+                <div className="w-16 h-16 bg-stone-100 rounded-full" />
+                <h3 className="text-base font-bold font-['Inter'] text-zinc-900">{item.title}</h3>
+                <p className="text-xs font-normal font-['Inter'] text-stone-500 text-center">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Final CTA Section */}
+      <div className="w-full px-6 py-24 bg-orange-900 flex flex-col items-center gap-6">
+        <h2 className="text-4xl font-extrabold font-['Plus_Jakarta_Sans'] text-white text-center">
+          Prêt à valider votre<br/>héritage ?
+        </h2>
+        <p className="text-lg font-normal font-['Inter'] text-rose-200/80 text-center">
+          Rejoignez la communauté SkillBadge et<br/>valorisez vos compétences dès aujourd&apos;hui.
+        </p>
+        <Link href="/auth/register-talent" className="w-full max-w-96 py-5 bg-white rounded-2xl text-orange-900 text-xl font-black font-['Plus_Jakarta_Sans'] hover:bg-gray-100 transition flex items-center justify-center">
+          Commencer maintenant
+        </Link>
+      </div>
+
+      {/* Footer */}
+      <div className="w-full px-6 lg:px-8 py-12 bg-stone-100 border-t border-stone-200/50">
+        <div className="max-w-[1280px] mx-auto space-y-8">
+          <div>
+            <h3 className="text-xl font-bold font-['Inter'] text-stone-900">SkillBadge</h3>
+            <p className="text-sm font-normal font-['Inter'] text-stone-500 mt-2">© 2026 SkillBadge Burkina Faso.</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div className="space-y-3">
+              <p className="text-xs font-bold font-['Inter'] uppercase text-stone-900 tracking-wider">LEGAL</p>
+              <p className="text-sm font-normal font-['Inter'] text-stone-500">Privacy Policy</p>
+              <p className="text-sm font-normal font-['Inter'] text-stone-500">Terms of Service</p>
+            </div>
+            <div className="space-y-3">
+              <p className="text-xs font-bold font-['Inter'] uppercase text-stone-900 tracking-wider">PARTNERS</p>
+              <p className="text-sm font-normal font-['Inter'] text-stone-500">Institutional Contact</p>
+              <p className="text-sm font-normal font-['Inter'] text-stone-500">API Documentation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

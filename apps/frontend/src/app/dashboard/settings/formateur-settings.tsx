@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Camera, Building2, MapPin, Globe, Sun, Headphones, Save } from 'lucide-react'
-import { useAuthStore } from '../../../store/auth'
-
-const sectionIconClass = 'w-4 h-4 text-[#AB3500]'
+import { useAuthStore } from '@/store/auth'
 
 export default function SettingsFormateur() {
   const { user } = useAuthStore()
@@ -97,7 +95,7 @@ export default function SettingsFormateur() {
       {/* IDENTITÉ ACADÉMIQUE */}
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
-          <Camera className={sectionIconClass} aria-hidden="true" />
+          <Camera className="w-4 h-4" style={{ color: '#AB3500' }} />
           <h2 className="text-xs font-bold text-gray-500 uppercase tracking-wider">
             IDENTITÉ ACADÉMIQUE
           </h2>
@@ -105,15 +103,15 @@ export default function SettingsFormateur() {
         
         <div className="bg-white rounded-xl p-6 shadow-sm">
           <div className="flex items-center gap-4">
-            <div className="w-20 h-20 rounded-xl flex items-center justify-center bg-[#FFD4B8]">
-              <Camera className="w-8 h-8 text-[#AB3500]" aria-hidden="true" />
+            <div className="w-20 h-20 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#FFD4B8' }}>
+              <Camera className="w-8 h-8" style={{ color: '#AB3500' }} />
             </div>
             <div>
               <h3 className="font-bold text-gray-900 mb-1">{formData.organisation || 'Nom de l\'organisation'}</h3>
               <p className="text-xs text-gray-600 mb-2">
                 PNG or SVG, min 512x512px.
               </p>
-              <button type="button" className="text-sm font-semibold hover:underline text-[#AB3500]" aria-label="Remplacer le logo de l'organisation">
+              <button type="button" className="text-sm font-semibold hover:underline" style={{ color: '#AB3500' }}>
                 Remplacer Logo
               </button>
             </div>
@@ -133,11 +131,10 @@ export default function SettingsFormateur() {
         <div className="bg-white rounded-xl p-6 shadow-sm space-y-4">
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="formateur-organisation" className="block text-xs font-semibold text-gray-500 uppercase mb-2">
+              <label className="block text-xs font-semibold text-gray-500 uppercase mb-2">
                 NOM DE L'INSTITUTION
               </label>
               <input 
-                id="formateur-organisation"
                 type="text" 
                 name="organisation"
                 value={formData.organisation}
@@ -148,12 +145,11 @@ export default function SettingsFormateur() {
             </div>
             
             <div>
-              <label htmlFor="formateur-linkedin" className="block text-xs font-semibold text-gray-500 uppercase mb-2">
+              <label className="block text-xs font-semibold text-gray-500 uppercase mb-2">
                 LINKEDIN
               </label>
               <div className="relative">
                 <input 
-                  id="formateur-linkedin"
                   type="text" 
                   name="linkedin"
                   value={formData.linkedin}
@@ -161,17 +157,16 @@ export default function SettingsFormateur() {
                   placeholder="linkedin.com/in/..."
                   className="w-full px-4 py-3 bg-gray-50 rounded-lg text-sm outline-none pr-10 focus:bg-white focus:ring-2 focus:ring-orange-900 transition"
                 />
-                <Globe className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" aria-hidden="true" />
+                <Globe className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
               </div>
             </div>
           </div>
 
           <div>
-            <label htmlFor="formateur-description" className="block text-xs font-semibold text-gray-500 uppercase mb-2">
+            <label className="block text-xs font-semibold text-gray-500 uppercase mb-2">
               DESCRIPTION DE L'INSTITUTION
             </label>
             <textarea 
-              id="formateur-description"
               name="description"
               value={formData.description}
               onChange={handleChange}
@@ -181,12 +176,11 @@ export default function SettingsFormateur() {
           </div>
 
           <div>
-            <label htmlFor="formateur-address" className="block text-xs font-semibold text-gray-500 uppercase mb-2">
+            <label className="block text-xs font-semibold text-gray-500 uppercase mb-2">
               ADRESSE PHYSIQUE
             </label>
             <div className="relative">
               <input 
-                id="formateur-address"
                 type="text" 
                 name="address"
                 value={formData.address}
@@ -194,7 +188,7 @@ export default function SettingsFormateur() {
                 placeholder="Avenue, Ville, Pays"
                 className="w-full px-4 py-3 bg-gray-50 rounded-lg text-sm outline-none pl-10 focus:bg-white focus:ring-2 focus:ring-orange-900 transition"
               />
-              <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" aria-hidden="true" />
+              <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
             </div>
           </div>
         </div>
@@ -203,7 +197,7 @@ export default function SettingsFormateur() {
       {/* TECHNIQUE */}
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
-          <Sun className="w-4 h-4 text-[#AB3500]" aria-hidden="true" />
+          <Sun className="w-4 h-4" style={{ color: '#AB3500' }} />
           <h2 className="text-xs font-bold text-gray-500 uppercase tracking-wider">
             TECHNIQUE
           </h2>
@@ -211,11 +205,10 @@ export default function SettingsFormateur() {
         
         <div className="bg-white rounded-xl p-6 shadow-sm">
           <div className="mb-4">
-            <label htmlFor="formateur-skills" className="block text-xs font-semibold text-gray-500 uppercase mb-2">
+            <label className="block text-xs font-semibold text-gray-500 uppercase mb-2">
               COMPÉTENCES
             </label>
             <input 
-              id="formateur-skills"
               type="text" 
               name="skills"
               value={formData.skills}
@@ -230,7 +223,7 @@ export default function SettingsFormateur() {
       {/* ASSISTANCE */}
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
-          <Headphones className="w-4 h-4 text-[#AB3500]" aria-hidden="true" />
+          <Headphones className="w-4 h-4" style={{ color: '#AB3500' }} />
           <h2 className="text-xs font-bold text-gray-500 uppercase tracking-wider">
             ASSISTANCE
           </h2>
@@ -242,22 +235,18 @@ export default function SettingsFormateur() {
           </p>
           
           <div className="space-y-3 mb-4">
-            <label htmlFor="formateur-support-subject" className="sr-only">Sujet du message</label>
             <input 
-              id="formateur-support-subject"
               type="text" 
               placeholder="Sujet"
               className="w-full px-4 py-3 bg-gray-50 rounded-lg text-sm outline-none focus:bg-white focus:ring-2 focus:ring-orange-900 transition"
             />
-            <label htmlFor="formateur-support-message" className="sr-only">Message d'assistance</label>
             <textarea 
-              id="formateur-support-message"
               placeholder="Comment nous pouvons vous aider aujourd'hui?"
               className="w-full px-4 py-3 bg-gray-50 rounded-lg text-sm outline-none resize-none min-h-[80px] focus:bg-white focus:ring-2 focus:ring-orange-900 transition"
             />
           </div>
 
-          <button type="button" className="w-full py-3 text-white font-bold rounded-lg hover:opacity-90 transition bg-[#AB3500]">
+          <button type="button" className="w-full py-3 text-white font-bold rounded-lg hover:opacity-90 transition" style={{ backgroundColor: '#AB3500' }}>
             Envoyer Message
           </button>
         </div>
@@ -267,9 +256,8 @@ export default function SettingsFormateur() {
       <button 
         type="submit"
         disabled={loading}
-        className="w-full py-4 text-white font-bold rounded-xl hover:opacity-90 transition disabled:opacity-50 flex items-center justify-center gap-2 bg-[#1A1A1A]"
-        aria-label={loading ? 'Sauvegarde en cours' : 'Sauvegarder les paramètres'}
-        title={loading ? 'Sauvegarde en cours' : 'Sauvegarder les paramètres'}
+        className="w-full py-4 text-white font-bold rounded-xl hover:opacity-90 transition disabled:opacity-50 flex items-center justify-center gap-2"
+        style={{ backgroundColor: '#1A1A1A' }}
       >
         <Save className="w-5 h-5" />
         {loading ? 'Sauvegarde en cours...' : 'Sauvegarder'}

@@ -1,0 +1,466 @@
+'use client'
+
+import { ArrowRight, Users, Briefcase, Shield, Check, Award, TrendingUp, Code, Lock, Database, Cloud, Palette, Rocket, Share2, Quote } from 'lucide-react'
+import Link from 'next/link'
+
+export default function Home() {
+  return (
+    <div className="w-[1338px] h-[5928px] relative overflow-hidden">
+      <div className="w-[1330px] pt-7 left-[8px] top-0 absolute inline-flex flex-col justify-start items-start">
+        <div className="self-stretch min-h-[700px] px-20 py-44 relative bg-stone-50 inline-flex justify-center items-center overflow-hidden">
+          <div className="max-w-[1280px] relative inline-flex flex-col justify-start items-start">
+            <div className="w-full self-stretch max-w-96 inline-flex flex-col justify-start items-start gap-6">
+              <div className="px-3 py-1 bg-emerald-500/10 rounded-full inline-flex justify-start items-center gap-2">
+                <div className="w-3 h-3 bg-emerald-500 rounded-full" />
+                <div className="justify-center text-emerald-500 text-xs font-bold font-['Inter'] leading-4">Certification d&apos;État Blockchain</div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start">
+                <div className="self-stretch justify-center"><span className="text-stone-900 text-5xl font-extrabold font-['Plus_Jakarta_Sans'] leading-10">Propulsez votre<br/>carrière avec une<br/></span><span className="text-orange-800 text-5xl font-extrabold font-['Plus_Jakarta_Sans']">preuve</span><span className="text-stone-900 text-5xl font-extrabold font-['Plus_Jakarta_Sans'] leading-10"> de talent.</span></div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start">
+                <div className="self-stretch justify-center text-stone-600 text-2xl font-normal font-['Inter'] leading-7">La plateforme nationale pour certifier<br/>vos compétences tech sur la blockchain et booster votre employabilité.</div>
+              </div>
+              <div className="self-stretch pt-4 flex flex-col justify-start items-start gap-4">
+                <Link href="/auth/register-talent" className="self-stretch h-14 relative bg-orange-800 rounded-xl inline-flex justify-center items-center gap-2 cursor-pointer hover:bg-orange-900 transition">
+                  <div className="w-96 h-14 left-0 top-0 absolute bg-white/0 rounded-xl shadow-[0px_4px_6px_-4px_rgba(171,53,0,0.20)] shadow-[0px_10px_15px_-3px_rgba(171,53,0,0.20)]" />
+                  <div className="text-center justify-center text-white text-base font-bold font-['Inter'] leading-6">Créer mon portfolio</div>
+                  <ArrowRight className="w-5 h-4 text-white" />
+                </Link>
+                <Link href="/auth/register-formateur" className="self-stretch h-14 bg-rose-100 rounded-xl outline outline-1 outline-offset-[-1px] outline-stone-300 inline-flex justify-center items-center cursor-pointer hover:bg-rose-200 transition">
+                  <div className="text-center justify-center text-orange-800 text-base font-bold font-['Inter'] leading-6">Rejoindre en tant que formateur</div>
+                </Link>
+                <Link href="/verify" className="self-stretch h-14 bg-stone-300 rounded-xl outline outline-1 outline-offset-[-1px] outline-stone-300 inline-flex justify-center items-center cursor-pointer hover:bg-stone-400 transition">
+                  <div className="w-64 text-center justify-center text-orange-800 text-base font-bold font-['Inter'] leading-6">Vérifier un talent</div>
+                </Link>
+              </div>
+            </div>
+            <div className="relative inline-flex flex-col justify-start items-start">
+              <div className="w-96 h-96 left-[103px] top-[26px] absolute bg-red-300/30 rounded-full blur-[32px]" />
+            </div>
+            <div className="relative inline-flex flex-col justify-start items-start">
+              <div className="w-48 h-48 left-[-32.05px] top-[-32.05px] absolute opacity-50 bg-orange-900/10 rounded-full blur-[32px]" />
+              <div className="w-32 h-32 relative">
+                <div className="w-32 h-32 left-0 top-0 absolute">
+                  <div className="w-32 h-32 left-0 top-0 absolute bg-black" />
+                </div>
+                <div className="w-36 h-32 left-0 top-[-0.02px] absolute bg-gradient-to-br from-orange-900 to-orange-800 inline-flex justify-center items-center">
+                  <div className="w-32 h-32 left-0 top-[0.02px] absolute bg-white/0 shadow-[0px_8px_10px_-6px_rgba(0,0,0,0.10)] shadow-xl" />
+                  <div className="w-28 h-28 relative">
+                    <div className="w-28 h-28 left-0 top-0 absolute">
+                      <div className="w-28 h-28 left-0 top-0 absolute bg-black" />
+                    </div>
+                    <div className="w-28 h-28 left-0 top-0 absolute bg-white/10 backdrop-blur-[2px] inline-flex justify-center items-center">
+                      <div className="inline-flex flex-col justify-start items-center">
+                        <div className="w-8 h-11 bg-white" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="pt-12 inline-flex flex-col justify-start items-start">
+              <div className="flex flex-col justify-start items-start gap-3.5">
+                <div className="self-stretch flex flex-col justify-start items-center">
+                  <div className="text-center justify-center text-zinc-900 text-4xl font-normal font-['Manrope'] leading-10">SkillBadge</div>
+                </div>
+                <div className="w-full max-w-80 pb-[0.63px] flex flex-col justify-start items-center">
+                  <div className="text-center justify-center text-stone-700 text-base font-normal font-['Inter'] uppercase leading-8 tracking-[6px]">BADGES NUMÉRIQUES<br/>CERTIFIÉS SUR LA BLOCKCHAIN</div>
+                </div>
+              </div>
+            </div>
+            <div className="w-4 h-4 left-[747px] top-[155.50px] absolute bg-yellow-900 rounded-full inline-flex flex-col justify-end items-start">
+              <div className="w-3 h-3 bg-white/0 rounded-full shadow-[0px_2px_4px_-2px_rgba(0,0,0,0.10)] shadow-md" />
+            </div>
+          </div>
+          <div className="w-4 h-4 left-[1029px] top-[192px] absolute bg-cyan-700 rounded-full inline-flex flex-col justify-start items-end">
+            <div className="w-4 h-4 bg-white/0 rounded-full shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.10)] shadow-lg" />
+          </div>
+        </div>
+        <div className="w-[1261.80px] max-w-[1280px] flex flex-col justify-start items-center gap-20">
+          <div className="w-[768px] max-w-[768px] flex flex-col justify-start items-start gap-6">
+            <div className="self-stretch flex flex-col justify-start items-center">
+              <div className="text-center justify-center"><span className="text-zinc-900 text-4xl font-bold font-['Plus_Jakarta_Sans'] leading-10">Le </span><span className="text-zinc-900 text-4xl font-bold font-['Inter'] leading-10">Défi</span><span className="text-zinc-900 text-4xl font-bold font-['Plus_Jakarta_Sans'] leading-10"> du Capital Humain</span></div>
+            </div>
+            <div className="self-stretch flex flex-col justify-start items-center">
+              <div className="text-center justify-center text-stone-700 text-lg font-normal font-['Inter'] leading-7">Le paradoxe numérique du Burkina Faso : une formation massive mais une employabilité<br/>limitée par le manque de confiance.</div>
+            </div>
+          </div>
+          <div className="self-stretch inline-flex flex-col justify-start items-start">
+            <div className="self-stretch p-10 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] inline-flex flex-col justify-start items-start gap-4">
+              <div className="self-stretch flex flex-col justify-start items-center">
+                <div className="justify-center text-blue-950 text-6xl font-bold font-['Inter'] leading-9">15 000+</div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-stone-500 text-sm font-bold font-['Inter'] uppercase leading-5 tracking-wider">JEUNES FORMÉS / AN</div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-stone-700 text-base font-normal font-['Inter'] leading-6">Une réserve de talent dynamique mais<br/>dépourvue de certifications<br/>standardisées.</div>
+              </div>
+            </div>
+            <div className="self-stretch p-10 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] inline-flex flex-col justify-start items-start gap-4">
+              <div className="self-stretch flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-blue-950 text-6xl font-bold font-['Inter'] leading-[60px]">70%</div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-stone-500 text-sm font-bold font-['Inter'] uppercase leading-5 tracking-wider">RECRUTEURS EN DIFFICULTÉ</div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-stone-700 text-base font-normal font-['Inter'] leading-6">Les entreprises peinent à valider<br/>l&apos;authenticité des compétences<br/>déclarées.</div>
+              </div>
+            </div>
+            <div className="self-stretch px-10 pt-10 pb-16 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] inline-flex flex-col justify-start items-start gap-4 overflow-hidden">
+              <div className="self-stretch flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-blue-950 text-6xl font-bold font-['Inter'] leading-[60px]">Moins de 5%</div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-stone-500 text-sm font-bold font-['Inter'] uppercase leading-5 tracking-wider">CERTIFIÉS RECONNUS</div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-stone-700 text-base font-normal font-['Inter'] leading-6">La grande majorité des acquis restent<br/>informels et invisibles pour le marché.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="h-52 flex flex-col justify-start items-start">
+          <div className="w-[1233px] h-52 justify-center text-orange-900 text-3xl font-bold font-['Inter'] leading-6">                                         SkillBadge comble le fossé entre la formation<br/><br/>                                    théorique et les exigences du marché de l&apos;emploi<br/><br/>                                    numérique.</div>
+        </div>
+        <div className="w-[1347px] px-8 py-32 bg-white flex flex-col justify-start items-center">
+          <div className="w-full max-w-[1280px] flex flex-col justify-start items-start gap-20">
+            <div className="self-stretch flex flex-col justify-start items-center">
+              <div className="text-center justify-center text-zinc-900 text-4xl font-bold font-['Plus_Jakarta_Sans'] leading-10">L&apos;Écosystème de Confiance SkillBadge</div>
+            </div>
+            <div className="self-stretch relative inline-flex justify-between items-center">
+              <div className="w-[1280px] h-1 left-0 top-[111.50px] absolute bg-gray-200" />
+              <div className="w-64 p-8 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] border-t-4 border-stone-200 inline-flex flex-col justify-start items-center gap-2">
+                <div className="w-16 h-16 bg-stone-100 rounded-full inline-flex justify-center items-center">
+                  <Briefcase className="w-6 h-6 text-stone-600" />
+                </div>
+                <div className="self-stretch pt-4 flex flex-col justify-start items-center">
+                  <div className="text-center justify-center text-zinc-900 text-base font-bold font-['Inter'] mb-2">Formateur</div>
+                  <div className="text-center justify-center text-stone-500 text-xs font-normal font-['Inter'] text-center">Institutions accréditées évaluant les compétences.</div>
+                </div>
+              </div>
+              <div className="w-64 p-8 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] border-t-4 border-cyan-700 inline-flex flex-col justify-start items-center gap-2">
+                <div className="w-16 h-16 bg-cyan-100 rounded-full inline-flex justify-center items-center">
+                  <Award className="w-6 h-6 text-cyan-700" />
+                </div>
+                <div className="self-stretch pt-4 flex flex-col justify-start items-center">
+                  <div className="text-center justify-center text-zinc-900 text-base font-bold font-['Inter'] mb-2">Badge émis</div>
+                  <div className="text-center justify-center text-stone-500 text-xs font-normal font-['Inter'] text-center">Enregistrement immuable sur la blockchain nationale.</div>
+                </div>
+              </div>
+              <div className="w-64 p-8 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] border-t-4 border-stone-900 inline-flex flex-col justify-start items-center gap-2">
+                <div className="w-16 h-16 bg-stone-200 rounded-full inline-flex justify-center items-center">
+                  <Users className="w-6 h-6 text-stone-900" />
+                </div>
+                <div className="self-stretch pt-4 flex flex-col justify-start items-center">
+                  <div className="text-center justify-center text-zinc-900 text-base font-bold font-['Inter'] mb-2">Talent</div>
+                  <div className="text-center justify-center text-stone-500 text-xs font-normal font-['Inter'] text-center">Le porteur possède et partage son portfolio numérique.</div>
+                </div>
+              </div>
+              <div className="w-64 p-8 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] border-t-4 border-orange-900 inline-flex flex-col justify-start items-center gap-2">
+                <div className="w-16 h-16 bg-orange-100 rounded-full inline-flex justify-center items-center">
+                  <Shield className="w-6 h-6 text-orange-900" />
+                </div>
+                <div className="self-stretch pt-4 flex flex-col justify-start items-center">
+                  <div className="text-center justify-center text-zinc-900 text-base font-bold font-['Inter'] mb-2">Vérification</div>
+                  <div className="text-center justify-center text-stone-500 text-xs font-normal font-['Inter'] text-center">Accès instantané à la preuve de compétence.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[1211px] max-w-[1280px] inline-flex flex-col justify-start items-start gap-16 px-8 py-32">
+          <div className="self-stretch inline-flex justify-between items-end">
+            <div className="max-w-[576px] inline-flex flex-col justify-start items-start gap-4">
+              <div className="self-stretch flex flex-col justify-start items-start">
+                <div className="justify-center text-zinc-900 text-4xl font-bold font-['Plus_Jakarta_Sans'] leading-10">Explorez les 8 Pôles d&apos;Excellence</div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start">
+                <div className="justify-center text-stone-700 text-base font-normal font-['Inter'] leading-6">Des parcours certifiants alignés sur les besoins réels de l&apos;économie<br/>numérique du pays.</div>
+              </div>
+            </div>
+            <div className="flex justify-start items-center gap-2">
+              <div className="justify-center text-orange-900 text-base font-bold font-['Inter'] leading-6">Voir tous les badges</div>
+              <ArrowRight className="w-3.5 h-3.5 text-orange-900" />
+            </div>
+          </div>
+          <div className="self-stretch inline-flex flex-col justify-start items-start">
+            <div className="w-80 h-64 p-8 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] border-l-4 border-orange-900 inline-flex flex-col justify-between items-start">
+              <div className="self-stretch inline-flex justify-between items-start">
+                <Code className="w-7 h-4 text-orange-900" />
+                <div className="px-3 py-1 bg-rose-200 rounded-full inline-flex flex-col justify-start items-start">
+                  <div className="justify-center text-orange-900 text-xs font-bold font-['Inter'] leading-4">9 Badges</div>
+                </div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start gap-2">
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-zinc-900 text-2xl font-bold font-['Plus_Jakarta_Sans'] leading-8">Développement Logiciel</div>
+                </div>
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-stone-500 text-sm font-normal font-['Inter'] leading-5">Web, Mobile, DevOps et Qualité logicielle.</div>
+                </div>
+              </div>
+            </div>
+            <div className="self-stretch h-64 p-8 bg-blue-300 rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] inline-flex flex-col justify-between items-start">
+              <div className="self-stretch inline-flex justify-between items-start">
+                <Shield className="w-6 h-7 text-sky-800" />
+                <div className="px-3 py-1 bg-cyan-700 rounded-full inline-flex flex-col justify-start items-start">
+                  <div className="justify-center text-white text-xs font-bold font-['Inter'] leading-4">5 Badges</div>
+                </div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start gap-1">
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-sky-800 text-xl font-bold font-['Plus_Jakarta_Sans'] leading-7">Cybersécurité</div>
+                </div>
+                <div className="self-stretch opacity-80 flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-sky-800 text-xs font-normal font-['Inter'] leading-4">Protection des infrastructures.</div>
+                </div>
+              </div>
+            </div>
+            <div className="self-stretch h-64 p-8 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] inline-flex flex-col justify-between items-start">
+              <div className="self-stretch inline-flex justify-between items-start">
+                <div className="w-7 h-7 bg-stone-400" />
+                <div className="px-3 py-1 bg-stone-100 rounded-full inline-flex flex-col justify-start items-start">
+                  <div className="justify-center text-stone-600 text-xs font-bold font-['Inter'] leading-4">6 Badges</div>
+                </div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start gap-1">
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-zinc-900 text-xl font-bold font-['Plus_Jakarta_Sans'] leading-7">Design UX/UI</div>
+                </div>
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-stone-500 text-xs font-normal font-['Inter'] leading-4">Expérience utilisateur.</div>
+                </div>
+              </div>
+            </div>
+            <div className="w-72 h-64 p-8 bg-stone-900/80 rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] inline-flex flex-col justify-between items-start">
+              <div className="self-stretch inline-flex justify-between items-start">
+                <Rocket className="w-7 h-7 text-orange-300" />
+                <div className="px-3 py-1 bg-stone-800 rounded-full inline-flex flex-col justify-start items-start">
+                  <div className="justify-center text-white text-xs font-bold font-['Inter'] leading-4">5 Badges</div>
+                </div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start gap-2">
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-white text-2xl font-bold font-['Plus_Jakarta_Sans'] leading-8">Entrepreneuriat Digital</div>
+                </div>
+                <div className="self-stretch opacity-60 flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-white text-sm font-normal font-['Inter'] leading-5">Gestion de projet et agilité business.</div>
+                </div>
+              </div>
+            </div>
+            <div className="w-80 h-64 p-8 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] inline-flex flex-col justify-between items-start">
+              <div className="self-stretch inline-flex justify-between items-start">
+                <Database className="w-7 h-7 text-stone-400" />
+                <div className="px-3 py-1 bg-stone-100 rounded-full inline-flex flex-col justify-start items-start">
+                  <div className="justify-center text-stone-600 text-xs font-bold font-['Inter'] leading-4">7 Badges</div>
+                </div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start gap-1">
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-zinc-900 text-xl font-bold font-['Plus_Jakarta_Sans'] leading-7">Data &amp; IA</div>
+                </div>
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-stone-500 text-xs font-normal font-['Inter'] leading-4">Analyse et Machine Learning.</div>
+                </div>
+              </div>
+            </div>
+            <div className="self-stretch h-64 p-8 bg-slate-200 rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] inline-flex flex-col justify-between items-start">
+              <div className="self-stretch inline-flex justify-between items-start">
+                <Share2 className="w-6 h-7 text-sky-800" />
+                <div className="px-3 py-1 bg-cyan-700 rounded-full inline-flex flex-col justify-start items-start">
+                  <div className="justify-center text-white text-xs font-bold font-['Inter'] leading-4">5 Badges</div>
+                </div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start gap-1">
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-sky-800 text-xl font-bold font-['Plus_Jakarta_Sans'] leading-7">Blockchain &amp; Web3</div>
+                </div>
+                <div className="self-stretch opacity-80 flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-sky-800 text-xs font-normal font-['Inter'] leading-4">Registre de transanction securisé</div>
+                </div>
+              </div>
+            </div>
+            <div className="w-64 h-64 p-8 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] inline-flex flex-col justify-between items-start">
+              <div className="self-stretch inline-flex justify-between items-start">
+                <Cloud className="w-7 h-7 text-stone-400" />
+                <div className="px-3 py-1 bg-stone-100 rounded-full inline-flex flex-col justify-start items-start">
+                  <div className="justify-center text-stone-600 text-xs font-bold font-['Inter'] leading-4">6 Badges</div>
+                </div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start gap-1">
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-zinc-900 text-xl font-bold font-['Plus_Jakarta_Sans'] leading-7">Infrastructure &amp; DevOps</div>
+                </div>
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-stone-500 text-xs font-normal font-['Inter'] leading-4">Cloud, Linux. Architectures</div>
+                </div>
+              </div>
+            </div>
+            <div className="self-stretch h-64 p-8 bg-white rounded-3xl shadow-[0px_12px_32px_0px_rgba(26,28,28,0.06)] inline-flex flex-col justify-between items-start">
+              <div className="self-stretch inline-flex justify-between items-start">
+                <TrendingUp className="w-7 h-7 text-stone-400" />
+                <div className="px-3 py-1 bg-stone-100 rounded-full inline-flex flex-col justify-start items-start">
+                  <div className="justify-center text-stone-600 text-xs font-bold font-['Inter'] leading-4">5 Badges</div>
+                </div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start gap-1">
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-zinc-900 text-xl font-bold font-['Plus_Jakarta_Sans'] leading-7">Marketing Digital</div>
+                </div>
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-stone-500 text-xs font-normal font-['Inter'] leading-4">Stratégie et réseaux sociaux.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-[1286px] px-6 py-20 bg-gray-200 flex flex-col justify-start items-center gap-6">
+          <div className="w-24 py-6 relative bg-white rounded-full inline-flex justify-center items-center">
+            <div className="w-24 h-20 left-0 top-0 absolute bg-white/0 rounded-full shadow-[0px_8px_10px_-6px_rgba(0,0,0,0.10)] shadow-xl" />
+            <Shield className="w-8 h-10 text-blue-950" />
+          </div>
+          <div className="self-stretch pt-2 flex flex-col justify-start items-center">
+            <div className="text-center justify-center text-blue-950 text-3xl font-black font-['Plus_Jakarta_Sans'] leading-9">Sécurité Totale</div>
+          </div>
+          <div className="self-stretch flex flex-col justify-start items-center gap-6">
+            <div className="px-6 py-3 bg-white/50 rounded-full outline outline-1 outline-offset-[-1px] outline-blue-950/5 inline-flex justify-start items-center gap-3">
+              <div className="w-2 h-2 bg-amber-500 rounded-full" />
+              <div className="inline-flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-blue-950 text-base font-bold font-['Inter'] leading-6">Infalsifiable</div>
+              </div>
+            </div>
+            <div className="px-6 py-3 bg-white/50 rounded-full outline outline-1 outline-offset-[-1px] outline-blue-950/5 inline-flex justify-start items-center gap-3">
+              <div className="w-2 h-2 bg-amber-500 rounded-full" />
+              <div className="inline-flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-blue-950 text-base font-bold font-['Inter'] leading-6">Transparent</div>
+              </div>
+            </div>
+            <div className="px-6 py-3 bg-white/50 rounded-full outline outline-1 outline-offset-[-1px] outline-blue-950/5 inline-flex justify-start items-center gap-3">
+              <div className="w-2 h-2 bg-amber-500 rounded-full" />
+              <div className="inline-flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-blue-950 text-base font-bold font-['Inter'] leading-6">Décentralisé</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="self-stretch h-[2194px] relative">
+          <div className="w-[1318px] px-6 py-20 left-0 top-0 absolute bg-orange-900 inline-flex flex-col justify-start items-start">
+            <div className="self-stretch flex flex-col justify-start items-start gap-8">
+              <div className="self-stretch inline-flex justify-start items-center gap-4">
+                <div className="w-12 h-12 bg-white/20 rounded-xl flex justify-center items-center">
+                  <Lock className="w-6 h-6 text-white" />
+                </div>
+                <div className="justify-center text-white text-2xl font-bold font-['Plus_Jakarta_Sans'] leading-8">Sécurité Blockchain</div>
+              </div>
+              <div className="self-stretch flex flex-col justify-start items-start">
+                <div className="self-stretch justify-center"><span className="text-blue-100/80 text-lg font-normal font-['Inter'] leading-7">     Chaque badge émis par </span><span className="text-blue-300 text-lg font-bold font-['Inter']">SkillBadge</span><span className="text-blue-100/80 text-lg font-normal font-['Inter'] leading-7"> est<br/>     un certificat numérique unique. Il est<br/>     impossible de le falsifier, de le copier ou<br/>     de se l&apos;approprier injustement. C&apos;est<br/>     votre preuve immuable de compétence.</span></div>
+              </div>
+              <div className="self-stretch p-6 bg-white/5 rounded-2xl outline outline-1 outline-offset-[-1px] outline-white/10 backdrop-blur-[2px] flex flex-col justify-start items-start gap-4">
+                <div className="self-stretch inline-flex justify-start items-center gap-3">
+                  <div className="w-8 h-8 bg-emerald-500 rounded-full flex justify-center items-center">
+                    <Check className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="inline-flex flex-col justify-start items-start">
+                    <div className="justify-center text-white text-sm font-semibold font-['Inter'] leading-5">Vérification Instantanée</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-[1330px] px-6 py-20 left-0 top-[508px] absolute bg-white inline-flex flex-col justify-start items-start gap-12 overflow-hidden">
+            <div className="self-stretch flex flex-col justify-start items-start">
+              <div className="self-stretch justify-center text-zinc-900 text-2xl font-bold font-['Plus_Jakarta_Sans'] leading-8">Ils ont franchi le pas</div>
+            </div>
+            <div className="self-stretch flex flex-col justify-start items-start gap-8">
+              <div className="self-stretch p-6 relative bg-zinc-100 rounded-[32px] flex flex-col justify-start items-start gap-6">
+                <div className="self-stretch inline-flex justify-start items-center gap-4">
+                  <img className="w-12 h-12 max-w-72 relative rounded-full border-2 border-orange-900" src="https://placehold.co/48x48" />
+                  <div className="inline-flex flex-col justify-start items-start">
+                    <div className="self-stretch flex flex-col justify-start items-start">
+                      <div className="justify-center text-zinc-900 text-base font-bold font-['Inter'] leading-6">SAWADODO</div>
+                    </div>
+                    <div className="self-stretch flex flex-col justify-start items-start">
+                      <div className="justify-center text-stone-700 text-xs font-normal font-['Inter'] leading-4">Développeur Fullstack</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-stone-700 text-base font-normal font-['Inter'] leading-6">&quot;Grâce à mon badge SkillBadge, j&apos;ai<br/>pu décrocher un contrat en freelance<br/>avec une agence à Lyon sans avoir de<br/>diplôme classique.&quot;</div>
+                </div>
+                <div className="left-[1224px] top-[16px] absolute flex flex-col justify-start items-start">
+                  <div className="w-8 h-6 bg-orange-900/20" />
+                </div>
+              </div>
+              <div className="self-stretch pl-4 flex flex-col justify-start items-start">
+                <div className="self-stretch p-6 bg-zinc-100 rounded-[32px] flex flex-col justify-start items-start gap-6">
+                  <div className="self-stretch inline-flex justify-start items-center gap-4">
+                    <img className="w-12 h-12 max-w-72 relative rounded-full border-2 border-cyan-700" src="https://placehold.co/48x48" />
+                    <div className="inline-flex flex-col justify-start items-start">
+                      <div className="self-stretch flex flex-col justify-start items-start">
+                        <div className="justify-center text-zinc-900 text-base font-bold font-['Inter'] leading-6">Archad</div>
+                      </div>
+                      <div className="self-stretch flex flex-col justify-start items-start">
+                        <div className="justify-center text-stone-700 text-xs font-normal font-['Inter'] leading-4">Designer UI/UX</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="self-stretch flex flex-col justify-start items-start">
+                    <div className="self-stretch justify-center text-stone-700 text-base font-normal font-['Inter'] leading-6">&quot;Le processus de certification est<br/>rigoureux. Ça donne une vraie<br/>valeur à notre travail quotidien.&quot;</div>
+                  </div>
+                </div>
+              </div>
+              <div className="self-stretch pr-4 flex flex-col justify-start items-start">
+                <div className="self-stretch p-6 bg-zinc-100 rounded-[32px] flex flex-col justify-start items-start gap-6">
+                  <div className="self-stretch inline-flex justify-start items-center gap-4">
+                    <img className="w-12 h-12 max-w-72 relative rounded-full border-2 border-yellow-900" src="https://placehold.co/48x48" />
+                    <div className="inline-flex flex-col justify-start items-start">
+                      <div className="self-stretch flex flex-col justify-start items-start">
+                        <div className="justify-center text-zinc-900 text-base font-bold font-['Inter'] leading-6">Achille</div>
+                      </div>
+                      <div className="self-stretch flex flex-col justify-start items-start">
+                        <div className="justify-center text-stone-700 text-xs font-normal font-['Inter'] leading-4">Consultant Data</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="self-stretch flex flex-col justify-start items-start">
+                    <div className="self-stretch justify-center text-stone-700 text-base font-normal font-['Inter'] leading-6">&quot;Enfin une plateforme qui comprend<br/>que la compétence prime sur le bout<br/>de papier.&quot;</div>
+                  </div>
+                </div>
+              </div>
+              <div className="w-[1207px] p-6 bg-zinc-100 rounded-[32px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] outline outline-1 outline-offset-[-1px] outline-neutral-300/10 flex flex-col justify-start items-start gap-6">
+                <div className="self-stretch inline-flex justify-start items-center gap-3">
+                  <img className="w-12 h-12 max-w-72 relative rounded-full" src="https://placehold.co/48x48" />
+                  <div className="inline-flex flex-col justify-start items-start">
+                    <div className="self-stretch flex flex-col justify-start items-start">
+                      <div className="justify-center text-zinc-900 text-sm font-semibold font-['Inter'] leading-5">Toussiane </div>
+                    </div>
+                    <div className="self-stretch flex flex-col justify-start items-start">
+                      <div className="justify-center text-gray-700 text-xs font-normal font-['Inter'] leading-4">Designer UI/UX, Certified</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="self-stretch flex flex-col justify-start items-start">
+                  <div className="self-stretch justify-center text-gray-700 text-base font-normal font-['Inter'] leading-6">&quot;Grâce au SkillBadge UI/UX, j&apos;ai pu<br/>prouver mes compétences à une<br/>agence tech à Ouagadougou. J&apos;ai été<br/>embauché en moins de deux<br/>semaines.&quot;</div>
+                </div>
+              </div>
+            </div>
+            <div className="self-stretch px-6 py-24 bg-orange-900 flex flex-col justify-start items-start gap-6">
+              <div className="self-stretch flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-white text-4xl font-extrabold font-['Plus_Jakarta_Sans'] leading-10">Prêt à valider votre<br/>héritage ?</div>
+              </div>
+              <div className="self-stretch pb-4 flex flex-col justify-start items-center">
+                <div className="text-center justify-center text-rose-200/80 text-lg font-normal font-['Inter'] leading-7">Rejoignez la communauté SkillBadge et<br/>valorisez vos compétences dès aujourd&apos;hui.</div>
+              </div>
+              <div className="self-stretch py-5 relative bg-white rounded-2xl inline-flex justify-center items-center cursor-pointer hover:bg-gray-50 transition">
+                <div className="w-[1234px] h-16 left-0 top-0 absolute bg-white/0 rounded-2xl shadow-2xl" />
+                <div className="text-center justify-center text-orange-900 text-xl font-black font-['Plus_Jakarta_Sans'] leading-7">Commencer maintenant</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
