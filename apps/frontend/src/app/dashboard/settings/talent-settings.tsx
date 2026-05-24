@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Camera, Mail, Globe, Moon, CheckCircle } from 'lucide-react'
-import { useAuthStore } from '@/store/auth'
+import { useAuthStore } from '../../../store/auth'
 
 const completionWidthClass = {
   0: 'w-0',
@@ -155,7 +155,7 @@ export default function SettingsTalent() {
       localStorage.setItem('userProfileData', JSON.stringify(userData))
       
       // Mettre à jour le store directement
-      const { useAuthStore } = await import('@/store/auth')
+      const { useAuthStore } = await import('../../../store/auth')
       const setUser = useAuthStore.getState().setUser
       setUser(userData)
       

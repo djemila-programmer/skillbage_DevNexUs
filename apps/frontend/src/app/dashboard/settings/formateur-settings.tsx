@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Camera, Building2, MapPin, Globe, Sun, Headphones, Save } from 'lucide-react'
-import { useAuthStore } from '@/store/auth'
+import { useAuthStore } from '../../../store/auth'
 
 const sectionIconClass = 'w-4 h-4 text-[#AB3500]'
 
