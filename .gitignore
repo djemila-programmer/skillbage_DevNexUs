@@ -10,8 +10,10 @@ dist/
 
 # Env files and secrets
 .env
-.env.*
-apps/backend/*.json
+.env.local
+.env.*.local
+apps/backend/*firebase-adminsdk*.json
+apps/backend/firebase-service-account*.json
 apps/backend/.git.backend.bak
 
 # OS / editor
@@ -28,4 +30,5 @@ pnpm-debug.log*
 
 # Misc
 *.log
+*.tsbuildinfo
 coverage/

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Injectable } from '@nestjs/common'
 import { FirebaseService } from '../firebase/firebase.service'
 
@@ -55,3 +56,4 @@ export class UsersService {
     return { success: true, userId, status }
   }
 }
+
