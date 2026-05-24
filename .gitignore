@@ -1,0 +1,34 @@
+# Ignore node deps and build artifacts
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.next/
+.turbo/
+/.turbo/
+/.cache/
+
+# Env files and secrets
+.env
+.env.local
+.env.*.local
+apps/backend/*firebase-adminsdk*.json
+apps/backend/firebase-service-account*.json
+apps/backend/.git.backend.bak
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Misc
+*.log
+*.tsbuildinfo
+coverage/
